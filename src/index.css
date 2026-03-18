@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    cursor: default;
+  }
+
+  body {
+    @apply bg-background text-white antialiased selection:bg-primary/30 selection:text-white font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Better typography defaults */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-sans tracking-tight;
+  }
+
+  p {
+    @apply text-gray-400 leading-relaxed;
+  }
+}
+
+@layer components {
+  /* Glass Card (refined) */
+  .glass-card {
+    @apply bg-white/[0.03] border border-white/[0.08] backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.4)];
+  }
+
+  .glass-card-hover {
+    @apply hover:bg-white/[0.06] hover:border-white/[0.15] transition-all duration-300;
+  }
+
+  /* Gradient Text (cleaner) */
+  .text-gradient {
+    @apply bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent tracking-tight;
+  }
+
+  /* Tech Badge (improved) */
+  .tech-badge {
+    @apply px-3 py-1.5 text-[11px] font-mono uppercase tracking-wider 
+           bg-white/5 border border-white/10 text-gray-300 
+           rounded-full transition-all duration-300
+           hover:bg-primary/20 hover:text-white hover:border-primary/30;
+  }
+
+  /* Section Title */
+  .section-title {
+    @apply text-4xl md:text-5xl font-black italic tracking-tight;
+  }
+
+  /* Subtle Divider */
+  .divider {
+    @apply h-px w-full bg-gradient-to-r from-purple-500/40 to-transparent;
+  }
+}
+
+/* Custom Scrollbar (cleaner) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-purple-500/50 transition-colors;
+}
+
+/* Smooth Section Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Background Mesh Glow Layer (refined) */
+.mesh-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(139, 92, 246, 0.06),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(139, 92, 246, 0.06),
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: -1;
+}

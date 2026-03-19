@@ -7,9 +7,9 @@ export const resumeData = {
     summary:
       "Frontend Developer specializing in building performant, scalable user interfaces with a strong focus on clean architecture, reusable component systems, and modern user experience.",
     links: {
-      linkedin: "#",
-      leetcode: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/mandeep-kaur05/",
+      leetcode: "https://leetcode.com/u/Mann__21/",
+      github: "https://github.com/mandeep-webdev",
     },
   },
   skills: [

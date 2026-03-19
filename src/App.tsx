@@ -8,6 +8,9 @@ import { resumeData } from "./data/data";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import Navbar from "./components/Navbar";
+import AIChatWidget from "./components/AIChatWidget";
+import AchievementStrip from "./components/AchievementStrip";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -23,40 +26,22 @@ function App() {
       {!loading && (
         <>
           <AnimatedBackground />
-          <nav className="fixed top-0 left-0 right-0 z-50 p-6 flex justify-between items-center backdrop-blur-sm bg-black/5">
-            <span className="font-black text-xl tracking-tighter">MK.</span>
-            <div className="flex gap-8 text-sm font-mono text-gray-400 uppercase tracking-widest">
-              <a
-                href="#experience"
-                className="hover:text-purple-400 transition-colors"
-              >
-                Exp
-              </a>
-              <a
-                href="#projects"
-                className="hover:text-purple-400 transition-colors"
-              >
-                Work
-              </a>
-              <a
-                href="mailto:mandeep.fullstack.dev@gmail.com"
-                className="hover:text-purple-400 transition-colors"
-              >
-                Contact
-              </a>
-            </div>
-          </nav>
+
+          <Navbar />
 
           <main className="container mx-auto px-6 relative z-10">
             <Hero />
-
             {/* Skills Bento */}
             <Skills />
-
-            <Experience />
+            <Experience />\
+            <AchievementStrip
+              title="Top Performance"
+              description={resumeData.achievements[0]}
+              highlightNumber="200+"
+              highlightLabel="Problems Solved"
+            />
             <Projects id="projects" />
             <Education />
-
             <footer
               className="
     mt-24 pt-10 pb-16
@@ -79,21 +64,21 @@ function App() {
                 {/* Right - Links */}
                 <div className="flex gap-5 text-sm">
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/mandeep-webdev"
                     target="_blank"
                     className="hover:text-purple-400 transition-colors"
                   >
                     GitHub
                   </a>
                   <a
-                    href="https://linkedin.com/in/yourprofile"
+                    href="https://www.linkedin.com/in/mandeep-kaur05/"
                     target="_blank"
                     className="hover:text-purple-400 transition-colors"
                   >
                     LinkedIn
                   </a>
                   <a
-                    href="mailto:your@email.com"
+                    href="mailto:mandeep.fullstack.dev@gmail.com"
                     className="hover:text-purple-400 transition-colors"
                   >
                     Email
@@ -102,6 +87,7 @@ function App() {
               </div>
             </footer>
           </main>
+          <AIChatWidget />
         </>
       )}
     </div>

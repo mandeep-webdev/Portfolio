@@ -1,45 +1,20 @@
 import { motion } from "framer-motion";
 import { resumeData } from "../data/data";
-import { ExternalLink, Github, Trophy } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function Projects() {
   return (
-    <section className="py-24 max-w-6xl mx-auto px-4">
-      {/* Achievement Strip */}
-      <div
-        className="
-        mb-24 p-10 md:p-12 rounded-2xl
-        bg-gradient-to-r from-purple-600/90 to-purple-500/80
-        border border-purple-400/20
-        flex flex-col md:flex-row items-center justify-between gap-8
-        text-white
-        shadow-[0_20px_60px_rgba(139,92,246,0.3)]
-      "
-      >
-        <div className="flex items-center gap-5">
-          <div className="bg-white/20 p-4 rounded-xl backdrop-blur-md">
-            <Trophy size={36} />
-          </div>
-          <div>
-            <h3 className="text-xl md:text-2xl font-semibold">
-              Top Performance
-            </h3>
-            <p className="opacity-80 max-w-md text-sm">
-              {resumeData.achievements[0]}
-            </p>
-          </div>
-        </div>
-
-        <div className="text-center md:text-right">
-          <span className="text-5xl md:text-6xl font-black">200+</span>
-          <p className="uppercase tracking-widest text-xs opacity-80">
-            Problems Solved
-          </p>
-        </div>
+    <section id="projects" className="py-24 max-w-6xl mx-auto px-4">
+      {/* Section Title */}
+      <div className="flex items-center gap-6 mb-16">
+        <h2 className="text-4xl font-black tracking-tight italic bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+          Projects
+        </h2>
+        <div className="h-px flex-grow bg-gradient-to-r from-purple-500/50 to-transparent" />
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative">
         {resumeData.projects.map((proj, idx) => (
           <motion.div
             key={idx}
@@ -50,15 +25,13 @@ export default function Projects() {
               p-8 rounded-2xl
               border border-white/10
               bg-white/5 backdrop-blur-md
-
               flex flex-col h-full
-
               transition-all duration-300
-
               hover:scale-[1.02]
               hover:border-purple-500/30
               hover:bg-white/10
               hover:shadow-[0_20px_60px_rgba(139,92,246,0.2)]
+              relative
             "
           >
             {/* Header */}
@@ -83,10 +56,10 @@ export default function Projects() {
             {proj.highlight && (
               <span
                 className="
-                mb-4 inline-block px-3 py-1.5
-                bg-green-500/20 text-green-400
-                text-xs font-semibold rounded-full
-              "
+                  mb-4 inline-block px-3 py-1.5
+                  bg-green-500/20 text-green-400
+                  text-xs font-semibold rounded-full
+                "
               >
                 {proj.highlight}
               </span>
@@ -115,9 +88,7 @@ export default function Projects() {
                     text-xs
                     bg-white/5 text-gray-400
                     border border-white/10
-
                     transition-all duration-300
-
                     hover:bg-purple-500/20
                     hover:text-white
                     hover:border-purple-500/30

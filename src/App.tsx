@@ -40,7 +40,7 @@ function App() {
               highlightNumber="200+"
               highlightLabel="Problems Solved"
             />
-            <Projects id="projects" />
+            <Projects />
             <Education />
             <footer
               className="

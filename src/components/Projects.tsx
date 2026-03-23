@@ -65,19 +65,6 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* Highlight Badge */}
-            {proj.highlight && (
-              <span
-                className="
-                  mb-4 inline-block px-3 py-1.5
-                  bg-green-500/20 text-green-400
-                  text-xs font-semibold rounded-full
-                "
-              >
-                {proj.highlight}
-              </span>
-            )}
-
             {/* Bullets */}
             <ul className="space-y-3 flex-grow mb-6">
               {proj.bullets.map((b, i) => (

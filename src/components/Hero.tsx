@@ -81,24 +81,28 @@ export default function Hero() {
           </button>
 
           {/* Secondary CTA */}
-          <button
+          <a
+            href="/mandeep-kaur-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Mandeep_Kaur_Resume.pdf"
             className="
-              group
-              px-8 py-3 rounded-full
-              border border-white/20
-              text-gray-300 font-medium
-              flex items-center justify-center gap-2
+    group
+    px-8 py-3 rounded-full
+    border border-white/20
+    text-gray-300 font-medium
+    flex items-center justify-center gap-2
 
-              transition-all duration-300
+    transition-all duration-300
 
-              hover:border-purple-400
-              hover:text-white
-              hover:bg-white/5
-            "
+    hover:border-purple-400
+    hover:text-white
+    hover:bg-white/5
+  "
           >
             Download Resume
             <Download className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </motion.div>
 

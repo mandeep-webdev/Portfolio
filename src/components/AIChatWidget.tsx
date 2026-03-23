@@ -53,13 +53,16 @@ export default function AIChatWidget() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:8000/api/ai-chat", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const res = await fetch(
+        "https://portfolio-zwky.onrender.com/api/ai-chat",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ question: currentQuery }),
         },
-        body: JSON.stringify({ question: currentQuery }),
-      });
+      );
 
       const data = await res.json();
 

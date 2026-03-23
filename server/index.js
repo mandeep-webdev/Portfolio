@@ -18,7 +18,6 @@ app.get("/", (req, res) => {
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
-// ✅ AI function
 async function getAIAnswer(question, context) {
   try {
     const response = await fetch(

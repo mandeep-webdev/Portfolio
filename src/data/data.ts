@@ -80,6 +80,8 @@ export const resumeData = {
     {
       title: "AI Resume Builder & ATS Analyzer",
       tech: "React, Typescript, Tailwind CSS, NodeJS, Express.js, Groq API",
+      github: "https://github.com/mandeep-webdev/ai-resume-builder",
+      live: "https://smart-ai-resume-builder.netlify.app/",
       bullets: [
         "Built a full stack AI-powered resume builder that allows users to create, edit and optimize resumes through a multi-step form interface.",
         "Implemented AI-driven resume review that analyzes user input and generates improved summaries, experience bullet points, project summary, and overall resume suggestions.",
@@ -88,10 +90,16 @@ export const resumeData = {
       ],
     },
     {
-      title: "Kwikpic – AI Powered Photo Management Platform",
-      highlight: "100K+ Downloads",
-      tech: "React, JavaScript, Tailwind CSS, NodeJS, Redux, Redux-Saga",
-      bullets: [],
+      title: "FocusRead",
+      tech: "JavaScript, Chrome Extension APIs (Manifest V3), HTML, CSS",
+      github: "https://github.com/mandeep-webdev/FocusRead",
+      live: "",
+      bullets: [
+        "Developed a Chrome Extension to enhance online newspaper reading by removing intrusive ads and decluttering article pages for a distraction-free experience.",
+        "Implemented dynamic DOM manipulation to detect and remove ad elements such as banners, popups, and inline sponsored content.",
+        "Leveraged Chrome Manifest V3 and declarativeNetRequest API to block unwanted network requests and improve page performance.",
+        "Designed scalable rule-based filtering to handle different newspaper websites with varying DOM structures.",
+      ],
     },
   ],
   education: [

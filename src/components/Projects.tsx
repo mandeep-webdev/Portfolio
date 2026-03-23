@@ -41,14 +41,27 @@ export default function Projects() {
               </h3>
 
               <div className="flex gap-3 text-gray-400">
-                <Github
-                  size={20}
-                  className="cursor-pointer hover:text-purple-400 transition-colors"
-                />
-                <ExternalLink
-                  size={20}
-                  className="cursor-pointer hover:text-purple-400 transition-colors"
-                />
+                {proj.github && (
+                  <a
+                    href={proj.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github
+                      size={20}
+                      className="cursor-pointer hover:text-purple-400 transition-colors"
+                    />
+                  </a>
+                )}
+
+                {proj.live && (
+                  <a href={proj.live} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink
+                      size={20}
+                      className="cursor-pointer hover:text-purple-400 transition-colors"
+                    />
+                  </a>
+                )}
               </div>
             </div>
 

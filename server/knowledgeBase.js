@@ -7,7 +7,7 @@ export const knowledgeBase = [
   {
     title: "Experience",
     content: `I’ve been working as a freelance frontend developer since March 2023, where I build modern web applications and SaaS-style products. My work mainly involves React and Next.js, and I focus a lot on performance and scalability.
-    I’ve implemented real-world features like authentication, design uploads, real-time previews, dynamic pricing, and order management systems. I’ve also integrated payment systems like Stripe and Razorpay.
+I’ve implemented real-world features like authentication, design uploads, real-time previews, dynamic pricing, and order management systems. I’ve also integrated payment systems like Stripe and Razorpay.
 `,
   },
   {
@@ -25,7 +25,13 @@ I focus a lot on writing clean, modular code and building scalable frontend arch
     content: `
 One of my key projects is an AI Resume Builder and ATS Analyzer, where users can create and optimize resumes with AI assistance. It includes features like resume analysis, content improvement, and ATS scoring.
 
-I also worked on Kwikpic, an AI-powered photo management platform that reached over 100K downloads. In this project, I used React, Redux, and modern frontend practices to build a scalable UI.
+I also developed FocusRead, a Chrome extension that enhances the reading experience by allowing users to save articles, highlight text, and manage their reading workflow efficiently. It’s built with modern web technologies and emphasizes user-friendly design and performance.
+`,
+  },
+  {
+    title: "Education",
+    content: `
+I hold a Master’s degree in Computer Science and a Bachelor of Computer Applications (BCA) from Guru Nanak Dev University, Amritsar. My academic background strengthened my problem-solving skills, algorithmic thinking, and software development expertise.
 `,
   },
 ];

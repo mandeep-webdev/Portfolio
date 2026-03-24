@@ -113,7 +113,7 @@ export default function AIChatWidget() {
           >
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-              <p className="text-sm text-gray-300">AI Assistant</p>
+              <p className="text-sm text-gray-300">Ask Mandeep AI 💬</p>
               <button onClick={() => setOpen(false)}>
                 <X className="w-5 h-5 text-gray-400 hover:text-white" />
               </button>

@@ -56,7 +56,7 @@ export const resumeData = {
     {
       role: "Frontend Developer",
       company: "Freelance Remote",
-      period: "Mar 2023 – Present",
+      period: "Sep 2023 – Present",
       bullets: [
         "Developing modern Web Applications and SaaS-style products for clients using React.js, Next.js and Full stack JavaScript technologies, focusing on performance, scalability, and clean UI architecture",
         "Implemented core product features like user authentication, design uploads, real-time previews, dynamic pricing logic, and order management workflows.",

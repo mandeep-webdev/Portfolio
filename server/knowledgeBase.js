@@ -1,7 +1,7 @@
 export const knowledgeBase = [
   {
     title: "About Me",
-    content: `I’m a frontend developer with around 2 years of experience, focused on building performant and scalable user interfaces. I enjoy working on clean architecture, creating reusable component systems, and delivering modern, smooth user experiences.
+    content: `I’m a frontend developer with 2.5+ years of experience, focused on building performant and scalable user interfaces. I enjoy working on clean architecture, creating reusable component systems, and delivering modern, smooth user experiences.
 `,
   },
   {
